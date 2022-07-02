@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600&display=swap');
+
+body {
+  font-family: 'Alegreya', serif;
+  background-color: #130f40;
+  color: white;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #130f40;
+  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+}
+
+.nav-link {
+  margin-bottom: 10px;
+}
+
+.nav-link-active {
+  display: block;
+  padding: .5rem 1rem;
+  color: #3ee577;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-link-active:hover,
+.navbar-nav-link:hover {
+  color: #3ee577 !important;
+}
+
+.navbar-nav-link {
+  display: block !important;
+  padding: .5rem 1rem !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.p-5 {
+  background-color: #3ee577;
+  background-image: linear-gradient(315deg, #3ee577 0%, #42fcdb 74%);
+  color: black;
+}
+
+/*Slider */
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  max-height: 600px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #3ee577;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #3ee577;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+.card-title
+{
+  color: #130f40;
+}
+.card-body
+{
+  background-color: #3ee577;
+  background-image: linear-gradient(315deg, #3ee577 0%, #42fcdb 74%);
+  color: black;
+  cursor: pointer;
+}
+.card-text
+{
+  color: black;
+}
